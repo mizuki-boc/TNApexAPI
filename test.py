@@ -10,7 +10,7 @@ import key
 
 params = {"TRN-Api-Key": key.API_KEY}
 
-user_name = "m1zuki96"
+user_name = "nosisikenta"
 
 endpoint = "profile/origin/" + user_name
 session = requests.Session()
@@ -41,9 +41,9 @@ print("ランク: " + rank_name + " (", rank_value,  ")")
 アクティブなレジェンドとそのレジェンドでのキル数 の表示
 '''
 active_legends = res["data"]["metadata"]["activeLegendName"]
-active_legends_kills = res["data"]["segments"][1]["stats"]["kills"]["value"]
+# active_legends_kills = res["data"]["segments"][1]["stats"]["kills"]["value"]
 print("使用したレジェンド: " + active_legends)
-print("使用レジェンドのキル数: ", active_legends_kills)
+# print("使用レジェンドのキル数: ", active_legends_kills)
 
 '''
 ここまでで，
